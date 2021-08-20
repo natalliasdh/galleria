@@ -34,8 +34,8 @@ body {
 }
 
 header img {
-    width: 113px;
-    height: 32px;
+    width: 168px;
+    height: 48px;
 }
 
 #startstop {
@@ -89,4 +89,79 @@ header {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+.largeimage {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 86%;
+    position: relative;
+}
+
+.slideshow {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    background-color: white;
+    padding: 24px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+#authorphoto {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+}
+
+#year {
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+    font-size: 100px;
+    color: #F3F3F3;
+    font-weight: 700;
+}
+
+#nameimage {
+    color: #000000;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+#nameauthor {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.text {
+    padding-top: 180px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7D7D7D;
+    line-height: 28px;
+}
+
+.view {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba(0%, 0%, 0%, 0.75);
+    padding: 16px;
+    color: white;
+    letter-spacing: 2.14px;
+    text-transform: uppercase;
+}
+
+.view img {
+    height: 12px;
+    width: 12px;
+    margin-right: 14px;
 }

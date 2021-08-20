@@ -6,26 +6,29 @@ xhr.onreadystatechange = function() {
         console.log(images[12].name);
         var list = "";
         for (let i = 0; i < images.length; i += 4) {
-            list += `<img src="${images[i].images.thumbnail}">`;
+            list += `<a href="slideshow.html"><img src="${images[i].images.thumbnail}" id="${i}"></a>`;
+
+
+
             console.log(i);
 
         }
 
         var list2 = "";
         for (let i = 1; i < images.length; i += 4) {
-            list2 += `<img src="${images[i].images.thumbnail}">`;
+            list2 += `<a href="slideshow.html"><img src="${images[i].images.thumbnail}" id="${i}"></a>`;;
             console.log(i);
         }
 
         var list3 = "";
         for (let i = 2; i < images.length; i += 4) {
-            list3 += `<img src="${images[i].images.thumbnail}">`;
+            list3 += `<a href="slideshow.html"><img src="${images[i].images.thumbnail}" id="${i}"></a>`;
 
         }
 
         var list4 = "";
         for (let i = 3; i < images.length; i += 4) {
-            list4 += `<img src="${images[i].images.thumbnail}">`;
+            list4 += `<a href="slideshow.html"><img src="${images[i].images.thumbnail}" id="${i}"></a>`;
 
         }
 
@@ -33,6 +36,30 @@ xhr.onreadystatechange = function() {
         document.querySelector(".col2").innerHTML = list2;
         document.querySelector(".col3").innerHTML = list3;
         document.querySelector(".col4").innerHTML = list4;
+
+        document.querySelector(".col1").addEventListener("click", function(event) {
+            console.log(event.target);
+            let hello = event.target.id;
+            localStorage.setItem("imageid", hello);
+        });
+
+        document.querySelector(".col2").addEventListener("click", function(event) {
+            console.log(event.target);
+            let hello = event.target.id;
+            localStorage.setItem("imageid", hello);
+        });
+
+        document.querySelector(".col3").addEventListener("click", function(event) {
+            console.log(event.target);
+            let hello = event.target.id;
+            localStorage.setItem("imageid", hello);
+        });
+
+        document.querySelector(".col4").addEventListener("click", function(event) {
+            console.log(event.target);
+            let hello = event.target.id;
+            localStorage.setItem("imageid", hello);
+        });
 
     }
 
