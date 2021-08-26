@@ -3,6 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/app2.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
                     <div class="nameauthor">Vincent Van Gogh</div>
                 </div>
                 <div id="authorphoto"></div>
-                <div class="view"><img src="assets/icon-view-image.svg" alt="View"> VIEW IMAGE</div>
+                <div class="view" onclick="imagemod()"><img src="assets/icon-view-image.svg" alt="View"> VIEW IMAGE</div>
 
 
             </div>
@@ -49,6 +50,12 @@
             </div>
             <div class="right"><img src="assets/icon-next-button.svg" alt="Next" onclick="plusSlides(1)">
             </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+
         </div>
 
 </body>

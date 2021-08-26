@@ -19,10 +19,19 @@ function connect() {
 
 
 
+
+
+
+
     };
 
     xhr2.open('GET', 'data/data.json');
     xhr2.send();
+
+
+
+
+
 }
 
 
@@ -67,4 +76,18 @@ function plusSlides(n) {
     showSlides(imageNumber);
 
 
+}
+
+function imagemod() {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = images2[imageNumber].images.hero.large;
+    console.log(modalImg.src);
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
 }
